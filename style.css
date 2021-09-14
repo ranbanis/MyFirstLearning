@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+body{
+    background-color: white;
+    background-image: url("../Images/bg.jpg");
+}
+
+/* Navbar CSS */
+nav{
+    background-color: red;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    font-family: 'Patrick Hand', cursive;
+
+}
+
+/* Navbar List */
+nav a{
+    color: white;
+    padding-right: 15px;
+    font-size: 30px;
+    text-decoration: none;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+/* Nav list styling */
+nav a:first-of-type{
+    font-size: 15px;
+}
+nav a:last-of-type{
+    font-size: 15px;
+}
+
+/* Nav list hovering */
+nav a:hover{
+    background-color: white;
+    color: #f00;
+    border-radius: 5px;
+    margin: 0px 20px 0px 20px;
+    
+}
+
+.stickman{
+    width: 50px;
+    position: absolute;
+    top: 12px;
+    left: -45px;
+    animation: sticky 10s ease infinite;
+}
+
+@keyframes sticky {
+    50%{
+        transform: translateX(1000%);
+    }
+
+    70% {
+        transform: translateX(1570%);
+    }
+    100% {
+        transform: translateX(2550%);
+    }
+}
+
+/* Introduction Part CSS */
+.intro{
+    display: flex;
+    position: absolute;
+    top: 144px;
+    right: 278px;
+    font-family: 'Patrick Hand', cursive;
+
+}
+
+.intro div{
+    padding-right: 50px;
+    padding-left: 10px;
+    color: #eea8a8;
+    transition: 0.3s;
+}
+
+.intro p{
+    color: black;
+}
+
+/* Description Part */
+
+.myDetails{
+    position:absolute;
+    top: 430px;
+    display: none;
+    color: black;
+    
+    
+    
+}
+
+.myDetails h1{
+    
+    font-family: 'Handlee', cursive;
+    
+    
+}
+.myDetails div{
+    font-family: 'Patrick Hand', cursive;
+    padding: 0px 50px;
+    transition: 3s;
+    animation: dets 2s ease ;
+
+}
+
+@keyframes dets {
+    0%{
+        opacity: 20%;
+    }
+    55%{
+        opacity: 60%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+/* Hi Image CSS */
+
+
+.hi{
+    
+}
+
+.hi img{
+    width: 250px;
+    position: absolute;
+    bottom: 190px;
+    left: 1000px;
+    display: none;
+    transition: 3s;
+    animation: hiimage 1s ease-in-out forwards;
+}
+
+@keyframes hiimage {
+    100% {
+        transform: translateX(-200%);
+    }
+}
